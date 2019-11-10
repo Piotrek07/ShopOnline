@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" >
+
+<head th:fragment="common-header">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <title>Auctions</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<div th:fragment="navbar">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Aukcje</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Aukcje
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Aktualne aukcje</a>
+                    <a class="dropdown-item" href="#">Dodaj przedmiot</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Najczesciej zadawane pytania</a>
+                </div>
+            </li>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Szukaj aukcji" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Szukaj</button>
+            </form>
+        </ul>
+        <ul class="nav nav-justified ">
+            <li class="px-2"><a href="#">SHOPPING BASKET</a></li>
+            <li class="px-4"><a href="#">MY ACCOUNT</a></li>
+            <li><a href="#">LOGOUT</a></li>
+        </ul>
+    </div>
+</nav>
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<div th:fragment="bootom-scripts">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</div>
+</body>
+</html>
