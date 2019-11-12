@@ -7,6 +7,25 @@ body{
     margin-bottom: 20px;
 }
 
+.container{
+    width: 90%;
+}
+
 .box{
     border: 1px solid red;
 }
+
+.section-headline{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.section-headline span{
+    background-color: #231F20;
+    padding: 5px 22px;
+}
+
