@@ -1,4 +1,4 @@
-package pl.shoponline.demo.entity;
+package pl.shoponline.demo.entity.security;
 
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;

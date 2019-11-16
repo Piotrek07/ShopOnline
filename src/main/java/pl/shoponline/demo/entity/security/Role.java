@@ -1,4 +1,4 @@
-package pl.shoponline.demo.entity;
+package pl.shoponline.demo.entity.security;
 
 import lombok.Getter;
 import lombok.Setter;
