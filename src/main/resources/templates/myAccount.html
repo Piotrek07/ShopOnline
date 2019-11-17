@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="common/header :: common-header">
 
 
 <body>
 
-<div th:replace="common/header :: navbar"/>
+<div th:replace="common/header :: navbar"></div>
 
 <div class="container">
 <div class="row">
@@ -57,7 +57,7 @@
                 </div>
 
                 <!--login panel-->
-                <div class="tab-pane fade" id="tab-2">
+                <div class="tab-pane fade" id="tab-2" th:classappend="${classActiveLogin ? 'is active' : ''}">
                     <div class="panel-group">
                         <div class="panel panel-defoult" style="border: none">
                             <div class="panel-body" style="background-color: #ededed; margin-top: 20px">
@@ -100,7 +100,7 @@
     </div>
 </div>
 
-<div th:replace="common/header :: bootom-scripts"/>
+<div th:replace="common/header :: bootom-scripts"></div>
 
 </body>
 </html>
